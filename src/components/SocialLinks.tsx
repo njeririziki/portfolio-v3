@@ -23,7 +23,7 @@ const socialLinks = [
   },
   {
     name: 'Resume',
-    href: '/resume.pdf',
+    href: '/Sharon_Njeri_Full_Stack_Engineer_CV.pdf',
     icon: Download,
   },
 ];

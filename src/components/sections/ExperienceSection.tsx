@@ -93,7 +93,7 @@ export function ExperienceSection() {
         <div className="mt-12">
           <a
             className="inline-flex items-center font-medium leading-tight text-foreground hover:text-accent focus-visible:text-accent group/link text-base"
-            href="/resume.pdf"
+            href="/Sharon_Njeri_Full_Stack_Engineer_CV.pdf"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"
