@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark portfolio design system - inspired by Brittany Chiang's portfolio */
+
+@layer base {
+  :root {
+    /* Dark theme - navy gradient background */
+    --background: 220 23% 10%;
+    --background-secondary: 217 22% 8%;
+    --foreground: 213 20% 85%;
+
+    /* Content cards */
+    --card: 219 20% 12%;
+    --card-foreground: 213 20% 85%;
+
+    /* Popovers */
+    --popover: 220 23% 10%;
+    --popover-foreground: 213 20% 85%;
+
+    /* Teal accent - key brand color */
+    --primary: 174 62% 47%;
+    --primary-foreground: 220 23% 10%;
+
+    /* Muted elements */
+    --secondary: 219 15% 20%;
+    --secondary-foreground: 213 15% 70%;
+
+    /* Text variations */
+    --muted: 219 15% 20%;
+    --muted-foreground: 215 15% 60%;
+
+    /* Accent teal for highlights */
+    --accent: 174 62% 47%;
+    --accent-foreground: 220 23% 10%;
+
+    /* Error states */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 213 20% 85%;
+
+    /* Borders and inputs */
+    --border: 219 15% 25%;
+    --input: 219 15% 20%;
+    --ring: 174 62% 47%;
+
+    /* Design system tokens */
+    --radius: 0.75rem;
+
+    /* Custom gradient backgrounds */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(220, 23%, 10%) 0%,
+      hsl(217, 22%, 8%) 100%
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(174, 62%, 47%) 0%,
+      hsl(180, 55%, 40%) 100%
+    );
+
+    /* Glows and shadows */
+    --glow-accent: 0 0 30px hsl(174, 62%, 47% / 0.3);
+    --shadow-subtle: 0 4px 20px hsl(220, 23%, 5% / 0.5);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light theme override (optional for toggle) */
+  .light {
+    --background: 210 40% 98%;
+    --background-secondary: 213 20% 95%;
+    --foreground: 220 23% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 23% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 23% 10%;
+    --primary: 174 62% 47%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 213 15% 90%;
+    --secondary-foreground: 220 23% 10%;
+    --muted: 213 15% 90%;
+    --muted-foreground: 215 15% 40%;
+    --accent: 174 62% 47%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 174 62% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-primary);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom selection color */
+  ::selection {
+    background: hsl(var(--accent) / 0.3);
+    color: hsl(var(--foreground));
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background-secondary));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent) / 0.6);
+  }
+}
+
+@layer utilities {
+  .accent-glow {
+    box-shadow: var(--glow-accent);
+  }
+
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  .fast-transition {
+    transition: var(--transition-fast);
+  }
+}
