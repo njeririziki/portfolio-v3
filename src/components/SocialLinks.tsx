@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, Download } from 'lucide-react';
 
 const socialLinks = [
   {
@@ -16,10 +16,15 @@ const socialLinks = [
     href: 'mailto:rizikinjeri@gmail.com',
     icon: Mail,
   },
+   {
+    name: 'Twitter',
+    href: 'https://x.com/RizikiNjeri',
+    icon: Twitter,
+  },
   {
     name: 'Resume',
     href: '/resume.pdf',
-    icon: FileText,
+    icon: Download,
   },
 ];
 

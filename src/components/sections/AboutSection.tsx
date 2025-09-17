@@ -11,10 +11,10 @@ export function AboutSection() {
           Fullstack Developer with 5 years of experience building scalable SaaS platforms and developer-focused applications. I'm passionate about creating efficient developer tooling and security-focused platforms that enable smooth workflows from prototyping to production.
         </p>
         <p className="mb-4 leading-relaxed text-muted-foreground">
-          Currently, I'm a <span className="text-accent font-medium">FullStack Software Engineer and Course Instructor</span> at Zaio Institute of Technology. I design and deliver comprehensive full-stack development curriculum covering React.js, Next.js, TypeScript, Node.js, and PostgreSQL, helping developers ranging from beginners to intermediate levels build production-ready applications.
+          Currently, I'm a <span className="text-white font-medium">FullStack Software Engineer and Course Instructor</span> at Zaio Institute of Technology. I design and deliver comprehensive full-stack development curriculum covering React.js, Next.js, TypeScript, Node.js, and PostgreSQL, helping developers ranging from beginners to intermediate levels build production-ready applications.
         </p>
         <p className="mb-4 leading-relaxed text-muted-foreground">
-          In the past, I've had the privilege of building software across diverse environments — from agri-fintech SaaS platforms at Adanian Labs to investment onboarding applications at Impact Rooms, and bancassurance platforms at Rensoft Solutions. I've led frontend architecture, mentored junior developers, and consistently delivered features from low-fidelity prototypes to production-ready systems.
+          In the past, I've had the privilege of building software across diverse environments. I've led frontend architecture, mentored junior developers, and consistently delivered features from low-fidelity prototypes to production-ready systems.
         </p>
         <p className="leading-relaxed text-muted-foreground">
           When I'm not coding, I'm mentoring aspiring developers through Mastercraft and organizing tech community events with Google Developer Group Nairobi. I believe in making development more accessible and helping others grow in their tech careers.

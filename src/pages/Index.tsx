@@ -24,7 +24,7 @@ const Index = () => {
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                 <span className="text-gradient">Sharon Njeri</span>
               </h1>
-              <h2 className="mt-3 text-lg font-medium tracking-tight text-accent sm:text-xl">
+              <h2 className="mt-3 text-lg font-medium tracking-tight text-bright sm:text-xl">
                 FullStack Software Engineer
               </h2>
               <p className="mt-4 max-w-xs leading-normal text-muted-foreground">

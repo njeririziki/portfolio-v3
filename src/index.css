@@ -12,7 +12,7 @@
     --foreground: 213 20% 85%;
 
     /* Content cards */
-    --card: 219 20% 12%;
+    --card: 180, 70%, 5%;
     --card-foreground: 213 20% 85%;
 
     /* Popovers */
@@ -20,7 +20,7 @@
     --popover-foreground: 213 20% 85%;
 
     /* Teal accent - key brand color */
-    --primary: 174 62% 47%;
+    --primary: #013130;
     --primary-foreground: 220 23% 10%;
 
     /* Muted elements */
@@ -48,17 +48,14 @@
     --radius: 0.75rem;
 
     /* Custom gradient backgrounds */
-    --gradient-primary: linear-gradient(
-      135deg,
-      hsl(220, 23%, 10%) 0%,
-      hsl(217, 22%, 8%) 100%
-    );
+    --gradient-primary: linear-gradient(135deg, #012530, #043949);
     --gradient-accent: linear-gradient(
       135deg,
-      hsl(174, 62%, 47%) 0%,
-      hsl(180, 55%, 40%) 100%
+      #fefaf6,
+      #e0f7f5 /* hsl(174, 62%, 47%) 0%,
+      hsl(180, 55%, 40%) 100% */
     );
-
+    --bright: #ffffff;
     /* Glows and shadows */
     --glow-accent: 0 0 30px hsl(174, 62%, 47% / 0.3);
     --shadow-subtle: 0 4px 20px hsl(220, 23%, 5% / 0.5);

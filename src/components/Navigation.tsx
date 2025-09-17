@@ -48,9 +48,9 @@ export function Navigation() {
               onClick={() => handleClick(item.href)}
               className={cn(
                 "group flex items-center py-3 px-0 text-sm font-medium smooth-transition",
-                "hover:text-accent focus:outline-none focus:text-accent",
+                "hover:text-bright focus:outline-none focus:text-bright",
                 activeSection === item.href.slice(1)
-                  ? "text-accent"
+                  ? "text-bright"
                   : "text-muted-foreground"
               )}
             >
